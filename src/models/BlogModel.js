@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const ObjectId = mongoose.Schema.Types.ObjectId
 
-const bookSchema = new mongoose.Schema( { 
+const blogSchema = new mongoose.Schema( { 
     title: {
         type: String,
         required: true}, 
@@ -34,4 +34,4 @@ const bookSchema = new mongoose.Schema( {
 }, { timestamps: true});
 
 
-module.exports = mongoose.model('Blogs', bookSchema)
+module.exports = mongoose.model('Blogs', blogSchema)
